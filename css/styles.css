@@ -1,0 +1,181 @@
+:root {
+    --acent-color: #2196F3;
+    --title-text-color: #212121;
+    --secondary-tect-color: #FFFFFF;
+    --main-text-color: #757575;
+    --background: #FFFFFF;
+    --secondary-background: #F5F4FA;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--main-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.list {
+    list-style-type: inherit;
+}
+
+.link {
+    text-decoration: inherit;
+}
+
+/* Шапка */
+.link.current {
+    color: var(--acent-color);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.accent {
+    color: var(--acent-color);
+}
+
+.nav a,
+.contacts a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+}
+
+.nav a:hover,
+.nav a:focus,
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--acent-color);
+}
+
+/* Герой */
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-tect-color);
+    background-color: var(--secondary-background);
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--secondary-tect-color);
+    background-color: var(--acent-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Переваги */
+.subtitle-advantages {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+
+.text-advantages {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Чим ми займаємося + Наша команда */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/* Наша команда */
+.subtitle-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-text-color)
+}
+
+.text-team {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.section.team {
+    background-color: var(--secondary-background);
+}
+
+/* Підвал */
+
+.link.location {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-tect-color);
+    background-color: var(--acent-color);
+}
+
+.link.contact {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--secondary-background);
+}
+
+.link.contact:hover,
+.link.contact:focus {
+    color: var(--acent-color);
+}
+
+
+/* Портфоліо */
+/* Фільтри */
+.filter-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: inherit;
+    color: var(--title-text-color);
+    background: var(--secondary-background);
+    border: none;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--secondary-tect-color);
+    background-color: var(--acent-color);
+    cursor: pointer;
+}
+
+/* Приклади робіт */
+
+.title-portfolio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.text-portfolio {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--main-text-color)
