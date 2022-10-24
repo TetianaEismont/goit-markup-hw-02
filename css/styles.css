@@ -1,10 +1,13 @@
 :root {
     --acent-color: #2196F3;
+    --secondary-accent-color: #2196F3;
     --title-text-color: #212121;
     --secondary-tect-color: #FFFFFF;
     --main-text-color: #757575;
     --background: #FFFFFF;
     --secondary-background: #F5F4FA;
+    --accent-background: #2F303A;
+    --logo-color: #000000;
 }
 
 body {
@@ -31,7 +34,7 @@ body {
 
 .logo {
     font-family: 'Raleway', sans-serif;
-    color: #000000;
+    color: var(--logo-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -58,6 +61,10 @@ body {
 }
 
 /* Герой */
+.hero {
+    background-color: var(--accent-background);
+}
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -66,8 +73,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: var(--secondary-tect-color);
-    background-color: var(--secondary-background);
-}
+   }
 
 .hero-button {
     font-family: inherit;
@@ -79,6 +85,11 @@ body {
     background-color: var(--acent-color);
     border: none;
     cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:active {
+    background-color: var(--secondary-accent-color);
 }
 
 /* Переваги */
@@ -106,6 +117,10 @@ body {
 }
 
 /* Наша команда */
+.item.team {
+    background-color: var(--background);
+}
+
 .subtitle-team {
     font-weight: 500;
     font-size: 16px;
@@ -123,20 +138,25 @@ body {
 }
 
 /* Підвал */
+.footer {
+    background-color: var(--accent-background);
+}
+
+.footer.logo {
+    color: var(--secondary-tect-color);
+}
 
 .link.location {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-tect-color);
-    background-color: var(--acent-color);
-}
+  }
 
 .link.contact {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    background-color: var(--secondary-background);
 }
 
 .link.contact:hover,
@@ -166,6 +186,9 @@ body {
 }
 
 /* Приклади робіт */
+.portfolio-title {
+   visibility: hidden; 
+}
 
 .title-portfolio {
     font-weight: 700;
